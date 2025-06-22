@@ -18,7 +18,13 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/courses" routerLinkActive="menu-active">Courses</a>
+          <a class="nav-link" routerLink="/courses" routerLinkActive="menu-active" [routerLinkActiveOptions]="{ exact: true }">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="courses/stiwk2124" routerLinkActive="menu-active">STIWK2124</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="courses/stiwk3014" routerLinkActive="menu-active">STIWK3014</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/about" routerLinkActive="menu-active">About</a>
