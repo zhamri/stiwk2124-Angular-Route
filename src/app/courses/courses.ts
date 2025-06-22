@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {RouterOutlet} from '@angular/router';
+import {Router, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-courses',
@@ -11,4 +11,9 @@ import {RouterOutlet} from '@angular/router';
 })
 export class Courses {
 
+  constructor(private router: Router) {}
+
+  goToCourse(courseCode: string) {
+    this.router.navigate(['courses', courseCode]);
+  }
 }
